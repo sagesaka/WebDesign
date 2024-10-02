@@ -119,3 +119,34 @@ h2 {
     clip-path: inset(0 0 0 100%);
   }
 }
+
+a {
+  color: white;
+}
+.rotate {
+  color: white;
+  background-color: #0cf;
+  height: 3em;
+  width: 12em;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transition: translate .2s;
+    &:nth-child(2) {
+      translate: 0 100%;
+    }
+  }
+
+  &:hover span:nth-child(1) {
+    translate: 0 -100%;
+  }
+  &:hover span:nth-child(2) {
+    translate: 0;
+  }
+}
