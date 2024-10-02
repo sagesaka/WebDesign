@@ -44,3 +44,34 @@ body * {
   color: #2c2c2c;
   background-color: white;
 }
+
+h2 {
+  display: inline-block;
+  position: relative;
+  animation: clip-text .5s ease-in-out forwards;
+
+  &::before {
+    content: '';
+    display: block;
+    background-color: #363636;
+    position: absolute;
+    inset: 0;
+    animation: clip-cover .5s .5s ease-in-out forwards;
+  }
+}
+@keyframes clip-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes clip-cover {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 100%);
+  }
+}
