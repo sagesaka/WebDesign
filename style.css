@@ -69,10 +69,10 @@ h2 {
   }
 }
 @keyframes slideBackAfter {
-  0% {
+  from {
     right: 100%;
   }
-  100% {
+  to {
     right: 0;
   }
 }
@@ -89,12 +89,11 @@ h2 {
 } */
 
 
-
 h2 {
   display: inline-block;
   position: relative;
   animation: clip-text .5s ease-in-out forwards;
-
+  
   &::before {
     content: '';
     display: block;
