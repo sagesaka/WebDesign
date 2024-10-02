@@ -48,6 +48,48 @@ h2 {
   background-color: white;
 }
 
+/* ---------- *
+*  animation  *
+*  ---------- */
+
+.companyName {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-color: #363636;
+    animation: slideBackAfter 0.4s 0.1s both;
+  }
+}
+@keyframes slideBackAfter {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+/* @keyframes animationName {
+  0% {
+    最初の状態
+  }
+  50% { 
+    中間の状態(中間は任意の%を記述できる80%とか)
+  }
+  100% {
+    最終的な状態
+  }
+} */
+
+
+
 h2 {
   display: inline-block;
   position: relative;
