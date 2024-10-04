@@ -150,3 +150,129 @@ a {
     translate: 0;
   }
 }
+
+.sample {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-color: #363636;
+    animation: sampleAnime 0.6s 0.1s ease both;
+  }
+}
+@keyframes sampleAnime {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+.sample2 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-color: #363636;
+    animation: sampleAnime2 0.6s 0.1s ease-in both;
+  }
+}
+@keyframes sampleAnime2 {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
+.sample3 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-color: #363636;
+    animation: sampleAnime3 0.6s 0.1s ease-out both;
+  }
+}
+@keyframes sampleAnime3 {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
+.sample4 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-color: #363636;
+    animation: sampleAnime4 0.6s 0.1s ease-in-out both;
+  }
+}
+@keyframes sampleAnime4 {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
+.sample5 {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin-left: 10px;
+
+  &::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-color: #363636;
+    animation: sampleAnime5 0.6s 0.1s linear both;
+  }
+}
+@keyframes sampleAnime5 {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
