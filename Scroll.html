@@ -88,5 +88,16 @@
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true, distance: "60px", duration: 2000}); //falseにすると戻った時に再度アニメーションは実行されない
+      ScrollReveal().reveal('.main-title', { delay: 200, origin: "left" });
+      ScrollReveal().reveal('.sec-01 .image', { delay: 200, origin: "bottom" });
+      ScrollReveal().reveal('.text-box', { delay: 200, origin: "right" });
+      ScrollReveal().reveal('.media-icons i', { delay: 200, origin: "bottom", interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: "top" });
+      ScrollReveal().reveal('.media-info li', { delay: 200, origin: "bottom", interval: 200 });
+    </script>
 </body>
 </html>
