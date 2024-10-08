@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(#594bdb, #c17dfd)
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 100px;
+  color: #fff;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-title {
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+.content {
+  width: 1150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .image {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+.content .image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 10;
+}
+.content .text-box {
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  max-width: 400px;
+  transform: translate(-80px, 50px);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border-radius: 1px solid;
+}
+.content .text-box h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.media-icons {
+  margin-top: 100px;
+}
+.media-icons a {
+  color: #fff;
+  font-size: 2rem;
+  margin: 60px;
+}
