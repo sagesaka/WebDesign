@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  transition: transform 0.4s 0.5s;
+  background: linear-gradient(to right, #b253e6, #775bd6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-contents {
+  font-size: 3rem;
+  font-weight: 1000;
+}
+header.hidden {
+  transform: translateY(-80px);
+}
+.contents {
+  padding-top: 80px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
